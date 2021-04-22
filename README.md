@@ -13,3 +13,5 @@ Looks like when they said inter-genic they meant it.
 
 I would like to look at GRO-seq data and map reads from (*Lim et al*) at some
 point to see if there is overlapping reads in inter-genic regions.
+
+However the resolution of the DRIP data is low.
