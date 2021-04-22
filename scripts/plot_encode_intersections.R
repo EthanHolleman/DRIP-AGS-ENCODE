@@ -18,7 +18,7 @@ read_bed_file <- function(bed.path){
 process_peak_description <- function(peak_descrip){
 
     split <- unlist(strsplit(peak_descrip, '_'))
-    descrip_only <- paste(peak_descrip[2:length(peak_descrip)],  collapse = ' ')
+    descrip_only <- paste(peak_descrip[length(peak_descrip)],  collapse = ' ')
     return(descrip_only)
 
 }
@@ -26,7 +26,7 @@ process_peak_description <- function(peak_descrip){
 plot_features <- function(bed.df){
 
     ggplot(bed.df, aes(x=`V4`, group=`V8`, fill=`V8`)) + 
-    geom_bar(stat='count', position='dodge') + 
+    geom_bar(stat='count', position='dodge', color='black') + 
     theme_pubr() + labs(x='Gene DRIP', y='Intersecting peaks', fill='Peak type')
 
 }
@@ -36,7 +36,7 @@ main <- function(){
     args <- commandArgs(trailingOnly=T)
     bed.df <- read_bed_file(args[1])  # first arg is input intersection bed
     plt <- plot_features(bed.df)
-    ggsave(args[2], plt, dpi=500, width=10, height=10)
+    ggsave(args[2], plt, dpi=500, width=10, height=12)
 
 }
 
