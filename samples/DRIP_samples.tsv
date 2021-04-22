@@ -1,0 +1,6 @@
+sample_name	gene	ags_gene	link
+GSE57353_AGS1s_drip	TREX	AGS1s	https://ftp.ncbi.nlm.nih.gov/geo/series/GSE57nnn/GSE57353/suppl/GSE57353%5FAGS1s%5Fdrip%2Ebed%2Egz
+GSE57353_AGS2s_drip	Rnase	AGS2s	https://ftp.ncbi.nlm.nih.gov/geo/series/GSE57nnn/GSE57353/suppl/GSE57353%5FAGS2s%5Fdrip%2Ebed%2Egz
+GSE57353_AGS4s_drip	Rnase	AGS4s	https://ftp.ncbi.nlm.nih.gov/geo/series/GSE57nnn/GSE57353/suppl/GSE57353%5FAGS4s%5Fdrip%2Ebed%2Egz
+GSE57353_AGS5s_drip	SAMHD1	AGS5s	https://ftp.ncbi.nlm.nih.gov/geo/series/GSE57nnn/GSE57353/suppl/GSE57353%5FAGS5s%5Fdrip%2Ebed%2Egz
+GSE57353_controls_drip	NA	control	https://ftp.ncbi.nlm.nih.gov/geo/series/GSE57nnn/GSE57353/suppl/GSE57353%5Fcontrols%5Fdrip%2Ebed%2Egz
