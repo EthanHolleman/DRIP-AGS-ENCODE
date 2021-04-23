@@ -29,3 +29,17 @@ rule download_drip_bed_file:
     '''
 
 
+rule download_danko_gro_seq_mapped_reads:
+# Supplementary_files_format_and_content: Processed data files are bigWigs of 
+# each sample. Each entry represents the number of reads at each base.
+    output:
+        'rawdata/GRO-seq/GSE60456_RAW'
+    params:
+        download_url='ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE60nnn/GSE60456/suppl/GSE60456_RAW.tar'
+    shell:'''
+    mkdir -p rawdata/GRO-seq
+    curl -L {params.download_url} -o {output}.tar
+    tar -C rawdata/GRO-seq -xvf {output}.tar
+    '''
+
+
